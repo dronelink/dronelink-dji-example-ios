@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		244E1D1D236787B0004B1691 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244E1D1C236787B0004B1691 /* AppDelegate.swift */; };
+		244E1D21236787B0004B1691 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244E1D20236787B0004B1691 /* ViewController.swift */; };
+		244E1D24236787B0004B1691 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 244E1D22236787B0004B1691 /* Main.storyboard */; };
+		244E1D26236787B1004B1691 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 244E1D25236787B1004B1691 /* Assets.xcassets */; };
+		244E1D29236787B1004B1691 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 244E1D27236787B1004B1691 /* LaunchScreen.storyboard */; };
+		244E1D3123678898004B1691 /* plan.json in Resources */ = {isa = PBXBuildFile; fileRef = 244E1D3023678898004B1691 /* plan.json */; };
+		4F6E41EF027D306A96AE18D3 /* Pods_DronelinkExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD17A38ACB4169FD47F6485A /* Pods_DronelinkExample.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		244E1D19236787B0004B1691 /* DronelinkExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DronelinkExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		244E1D1C236787B0004B1691 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		244E1D20236787B0004B1691 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		244E1D23236787B0004B1691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		244E1D25236787B1004B1691 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		244E1D28236787B1004B1691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		244E1D2A236787B2004B1691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		244E1D3023678898004B1691 /* plan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = plan.json; sourceTree = "<group>"; };
+		5F6A49BC50905484FD0203FF /* Pods-DronelinkExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DronelinkExample.release.xcconfig"; path = "Target Support Files/Pods-DronelinkExample/Pods-DronelinkExample.release.xcconfig"; sourceTree = "<group>"; };
+		6FD850AC5B1C9B81AD65D276 /* Pods-DronelinkExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DronelinkExample.debug.xcconfig"; path = "Target Support Files/Pods-DronelinkExample/Pods-DronelinkExample.debug.xcconfig"; sourceTree = "<group>"; };
+		BD17A38ACB4169FD47F6485A /* Pods_DronelinkExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DronelinkExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		244E1D16236787B0004B1691 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F6E41EF027D306A96AE18D3 /* Pods_DronelinkExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		244E1D10236787B0004B1691 = {
+			isa = PBXGroup;
+			children = (
+				244E1D1B236787B0004B1691 /* DronelinkExample */,
+				244E1D1A236787B0004B1691 /* Products */,
+				C3C15A4383CB8517C05E70F1 /* Pods */,
+				E171767A4672ECF2F49430A2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		244E1D1A236787B0004B1691 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				244E1D19236787B0004B1691 /* DronelinkExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		244E1D1B236787B0004B1691 /* DronelinkExample */ = {
+			isa = PBXGroup;
+			children = (
+				244E1D1C236787B0004B1691 /* AppDelegate.swift */,
+				244E1D20236787B0004B1691 /* ViewController.swift */,
+				244E1D3023678898004B1691 /* plan.json */,
+				244E1D22236787B0004B1691 /* Main.storyboard */,
+				244E1D25236787B1004B1691 /* Assets.xcassets */,
+				244E1D27236787B1004B1691 /* LaunchScreen.storyboard */,
+				244E1D2A236787B2004B1691 /* Info.plist */,
+			);
+			path = DronelinkExample;
+			sourceTree = "<group>";
+		};
+		C3C15A4383CB8517C05E70F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6FD850AC5B1C9B81AD65D276 /* Pods-DronelinkExample.debug.xcconfig */,
+				5F6A49BC50905484FD0203FF /* Pods-DronelinkExample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E171767A4672ECF2F49430A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD17A38ACB4169FD47F6485A /* Pods_DronelinkExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		244E1D18236787B0004B1691 /* DronelinkExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 244E1D2D236787B2004B1691 /* Build configuration list for PBXNativeTarget "DronelinkExample" */;
+			buildPhases = (
+				912A2C18C6497BB8ACCDD81C /* [CP] Check Pods Manifest.lock */,
+				244E1D15236787B0004B1691 /* Sources */,
+				244E1D16236787B0004B1691 /* Frameworks */,
+				244E1D17236787B0004B1691 /* Resources */,
+				43F7E849C6938A833FE7E4D0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DronelinkExample;
+			productName = DronelinkExample;
+			productReference = 244E1D19236787B0004B1691 /* DronelinkExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		244E1D11236787B0004B1691 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = Dronelink;
+				TargetAttributes = {
+					244E1D18236787B0004B1691 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 244E1D14236787B0004B1691 /* Build configuration list for PBXProject "DronelinkExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 244E1D10236787B0004B1691;
+			productRefGroup = 244E1D1A236787B0004B1691 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				244E1D18236787B0004B1691 /* DronelinkExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		244E1D17236787B0004B1691 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				244E1D3123678898004B1691 /* plan.json in Resources */,
+				244E1D29236787B1004B1691 /* LaunchScreen.storyboard in Resources */,
+				244E1D26236787B1004B1691 /* Assets.xcassets in Resources */,
+				244E1D24236787B0004B1691 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43F7E849C6938A833FE7E4D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DronelinkExample/Pods-DronelinkExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DronelinkExample/Pods-DronelinkExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DronelinkExample/Pods-DronelinkExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		912A2C18C6497BB8ACCDD81C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DronelinkExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		244E1D15236787B0004B1691 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				244E1D21236787B0004B1691 /* ViewController.swift in Sources */,
+				244E1D1D236787B0004B1691 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		244E1D22236787B0004B1691 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				244E1D23236787B0004B1691 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		244E1D27236787B1004B1691 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				244E1D28236787B1004B1691 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		244E1D2B236787B2004B1691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		244E1D2C236787B2004B1691 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		244E1D2E236787B2004B1691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FD850AC5B1C9B81AD65D276 /* Pods-DronelinkExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HB9BS895PG;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = DronelinkExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dronelink.DronelinkExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		244E1D2F236787B2004B1691 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F6A49BC50905484FD0203FF /* Pods-DronelinkExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HB9BS895PG;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = DronelinkExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dronelink.DronelinkExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		244E1D14236787B0004B1691 /* Build configuration list for PBXProject "DronelinkExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				244E1D2B236787B2004B1691 /* Debug */,
+				244E1D2C236787B2004B1691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		244E1D2D236787B2004B1691 /* Build configuration list for PBXNativeTarget "DronelinkExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				244E1D2E236787B2004B1691 /* Debug */,
+				244E1D2F236787B2004B1691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 244E1D11236787B0004B1691 /* Project object */;
+}
