@@ -17,10 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         AppDelegate.droneSessionManager.add(delegate: self)
-        Dronelink.shared.register(environmentKey: "INSERT YOUR ENVIRONMENT KEY HERE")
-        if let kernel = Bundle.main.url(forResource: "dronelink-kernel", withExtension: "js") {
-            try? Dronelink.shared.install(kernel: kernel)
-        }
+        Dronelink.shared.identify(user: User(id: "12345", email: "jim@dronelink.com", name: "Jim McAndrew"))
+        Dronelink.shared.enableDevelopmentServer()
+        Dronelink.shared.register(environmentKey: "FNXQ9CBS66xn7F4MX6jW")
+        try? Dronelink.shared.install(kernel: Bundle.main.url(forResource: "dronelink-kernel", withExtension: "js")!)
         return true
     }
 }

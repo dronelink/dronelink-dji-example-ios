@@ -2,9 +2,9 @@ PODS:
   - DJI-SDK-iOS (4.11)
   - DJI-UXSDK-iOS (4.11)
   - DJIWidget (1.6.1)
-  - DronelinkCore (1.0.0)
-  - DronelinkCoreUI (1.0.0):
-    - DronelinkCore (~> 1.0.0)
+  - DronelinkCore (1.0.2)
+  - DronelinkCoreUI (1.0.1):
+    - DronelinkCore (~> 1.0.2)
     - Mapbox-iOS-SDK (~> 5.4.0)
     - MaterialComponents/Buttons (~> 92.5.0)
     - MaterialComponents/Dialogs (~> 92.5.0)
@@ -13,17 +13,17 @@ PODS:
     - MaterialComponents/ProgressView (~> 92.5.0)
     - MaterialComponents/Snackbar (~> 92.5.0)
     - SnapKit (~> 5.0.0)
-  - DronelinkDJI (1.0.0):
+  - DronelinkDJI (1.0.1):
     - DJI-SDK-iOS (~> 4.11)
     - DJIWidget (~> 1.6.1)
     - DronelinkCore (~> 1.0.0)
-  - DronelinkDJIUI (1.0.0):
+  - DronelinkDJIUI (1.0.1):
     - DJI-SDK-iOS (~> 4.11)
     - DJI-UXSDK-iOS (~> 4.11)
     - DJIWidget (~> 1.6.1)
-    - DronelinkCore (~> 1.0.0)
-    - DronelinkCoreUI (~> 1.0.0)
-    - DronelinkDJI (~> 1.0.0)
+    - DronelinkCore (~> 1.0.2)
+    - DronelinkCoreUI (~> 1.0.1)
+    - DronelinkDJI (~> 1.0.1)
     - MaterialComponents/Palettes (~> 92.5.0)
     - SnapKit (~> 5.0.0)
   - Mapbox-iOS-SDK (5.4.0)
@@ -152,18 +152,17 @@ PODS:
   - SnapKit (5.0.1)
 
 DEPENDENCIES:
-  - DronelinkCore (~> 1.0.0)
-  - DronelinkCoreUI (~> 1.0.0)
-  - DronelinkDJI (~> 1.0.0)
-  - DronelinkDJIUI (~> 1.0.0)
+  - DronelinkCore (~> 1.0.2)
+  - DronelinkCoreUI (~> 1.0.1)
+  - DronelinkDJI (~> 1.0.1)
+  - DronelinkDJIUI (~> 1.0.1)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
-    - DronelinkCore
   trunk:
     - DJI-SDK-iOS
     - DJI-UXSDK-iOS
     - DJIWidget
+    - DronelinkCore
     - DronelinkCoreUI
     - DronelinkDJI
     - DronelinkDJIUI
@@ -179,10 +178,10 @@ SPEC CHECKSUMS:
   DJI-SDK-iOS: dde922e22db39e270816fd7b077eccd362d61e4f
   DJI-UXSDK-iOS: cc2b32807572b0c1c84b182c9743c6d0a26c84f2
   DJIWidget: 93d449c4ef9cad1292b400e39da80ade4c538ee4
-  DronelinkCore: d6eddb4c3f9754ea4d92ddffda71f075e91c7272
-  DronelinkCoreUI: 76564d2b73581bf242f938374dfe3dfdaf3f5098
-  DronelinkDJI: 30b6530e9e79847355badbb3cb19b9b5d1bed2c3
-  DronelinkDJIUI: c8e77164017d763fe13d85a8a3052fe194701d0f
+  DronelinkCore: eb3f7119d392604afce4bf387360ff53b1601de0
+  DronelinkCoreUI: b22ebeb060d2bd466a7d47d9d3174a6ab48b18a4
+  DronelinkDJI: 9df86908d6d338e19785331124474c104fd471e6
+  DronelinkDJIUI: e6d9b78606290b57533d79221acd570bf0a007b9
   Mapbox-iOS-SDK: 2b58f752d94e57e95b8e54f3b52569199f6efdba
   MaterialComponents: 268edb7e34f1277b79d20f701b6ae30c7cd0179a
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
@@ -191,6 +190,6 @@ SPEC CHECKSUMS:
   MotionInterchange: ead0e3ae1f3a5fb539e289debbc7ae036160a10d
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: b047608e65ec76e68d3737213f995577ee650245
+PODFILE CHECKSUM: 9ed55f2ca0e6eca128dc655b4034e3769b339c8c
 
 COCOAPODS: 1.8.4

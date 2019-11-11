@@ -26,6 +26,9 @@ class ViewController: UIViewController {
             do {
                 try Dronelink.shared.load(plan: plan)
             }
+            catch DronelinkError.kernelUnavailable {
+                os_log(.error, log: self.log, "Dronelink Kernel Unavailable")
+            }
             catch DronelinkError.unregistered {
                 os_log(.error, log: self.log, "Dronelink SDK Unregistered")
             }
