@@ -1,16 +1,16 @@
-# DronelinkExample
+# DronelinkExample - iOS
 
 ## Requirements
 
--   DJISDK key: https://developer.dji.com/
--   Mapbox access token: https://account.mapbox.com/access-tokens/create
--   Dronelink environment key: https://www.dronelink.com/
+- DJISDK key: https://developer.dji.com/
+- Mapbox access token: https://account.mapbox.com/access-tokens/create
+- Dronelink environment key: https://www.dronelink.com/
 
 ## Installation
 
--   Update bundle identifier to match what was registered with DJI
--   Provide DJISDK key and Mapbox access token in info.plist
--   Provide Dronelink environment key in AppDelegate
+- Update bundle identifier to match what was registered with DJI
+- Provide DJISDK key and Mapbox access token in info.plist
+- Provide Dronelink environment key in AppDelegate
 
 ## Author
 

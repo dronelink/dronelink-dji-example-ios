@@ -8,19 +8,31 @@
 import DronelinkCore
 import DronelinkDJI
 import UIKit
+import os
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    private let log = OSLog(subsystem: "DronelinkExample", category: "AppDelegate")
+    
     internal static let droneSessionManager = DJIDroneSessionManager()
     
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         AppDelegate.droneSessionManager.add(delegate: self)
-        Dronelink.shared.identify(user: User(id: "12345", email: "jim@dronelink.com", name: "Jim McAndrew"))
-        Dronelink.shared.enableDevelopmentServer()
-        Dronelink.shared.register(environmentKey: "FNXQ9CBS66xn7F4MX6jW")
-        try? Dronelink.shared.install(kernel: Bundle.main.url(forResource: "dronelink-kernel", withExtension: "js")!)
+        Dronelink.shared.register(environmentKey: "INSERT YOUR ENVIRONMENT KEY HERE")
+        do {
+            try Dronelink.shared.install(kernel: Bundle.main.url(forResource: "dronelink-kernel", withExtension: "js")!)
+        }
+        catch DronelinkError.kernelInvalid {
+            os_log(.error, log: self.log, "Dronelink Kernel Invalid")
+        }
+        catch DronelinkError.kernelIncompatible {
+            os_log(.error, log: self.log, "Dronelink Kernel Incompatible")
+        }
+        catch {
+            os_log(.error, log: self.log, "Unknown error!")
+        }
         return true
     }
 }
@@ -47,4 +59,6 @@ extension AppDelegate: DroneSessionDelegate {
     func onCommandExecuted(session: DroneSession, command: MissionCommand) {}
 
     func onCommandFinished(session: DroneSession, command: MissionCommand, error: Error?) {}
+    
+    func onCameraFileGenerated(session: DroneSession, file: CameraFile) {}
 }

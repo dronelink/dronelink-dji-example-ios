@@ -24,7 +24,7 @@ class ViewController: UIViewController {
             }
             
             do {
-                try Dronelink.shared.load(plan: plan)
+                try Dronelink.shared.load(plan: plan, delegate: self)
             }
             catch DronelinkError.kernelUnavailable {
                 os_log(.error, log: self.log, "Dronelink Kernel Unavailable")
@@ -39,3 +39,16 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController: MissionExecutorDelegate {
+    func onMissionEstimated(executor: MissionExecutor, duration: TimeInterval) {}
+    
+    func onMissionEngaged(executor: MissionExecutor, engagement: MissionExecutor.Engagement) {}
+    
+    func onMissionExecuted(executor: MissionExecutor, engagement: MissionExecutor.Engagement) {}
+    
+    func onMissionDisengaged(executor: MissionExecutor, engagement: MissionExecutor.Engagement, reason: Mission.Message) {
+        //save mission to back-end using: executor.missionSerialized
+        //get asset manifest using: executor.assetManifestSerialized
+        //load mission later using Dronelink.shared.load(mission: ...
+    }
+}
