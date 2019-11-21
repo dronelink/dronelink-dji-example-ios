@@ -13,11 +13,12 @@
 		244E1D26236787B1004B1691 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 244E1D25236787B1004B1691 /* Assets.xcassets */; };
 		244E1D29236787B1004B1691 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 244E1D27236787B1004B1691 /* LaunchScreen.storyboard */; };
 		244E1D3123678898004B1691 /* plan.json in Resources */ = {isa = PBXBuildFile; fileRef = 244E1D3023678898004B1691 /* plan.json */; };
-		4F6E41EF027D306A96AE18D3 /* Pods_DronelinkExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD17A38ACB4169FD47F6485A /* Pods_DronelinkExample.framework */; };
+		24BB50C62385894D0039C86F /* dronelink-kernel.js in Resources */ = {isa = PBXBuildFile; fileRef = 24BB50C52385894D0039C86F /* dronelink-kernel.js */; };
+		6B77199810344999725BEC37 /* Pods_DronelinkDJIExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C81F75A081B7856123B914 /* Pods_DronelinkDJIExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		244E1D19236787B0004B1691 /* DronelinkExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DronelinkExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		244E1D19236787B0004B1691 /* DronelinkDJIExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DronelinkDJIExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		244E1D1C236787B0004B1691 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		244E1D20236787B0004B1691 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		244E1D23236787B0004B1691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -25,9 +26,12 @@
 		244E1D28236787B1004B1691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		244E1D2A236787B2004B1691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		244E1D3023678898004B1691 /* plan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = plan.json; sourceTree = "<group>"; };
-		5F6A49BC50905484FD0203FF /* Pods-DronelinkExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DronelinkExample.release.xcconfig"; path = "Target Support Files/Pods-DronelinkExample/Pods-DronelinkExample.release.xcconfig"; sourceTree = "<group>"; };
-		6FD850AC5B1C9B81AD65D276 /* Pods-DronelinkExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DronelinkExample.debug.xcconfig"; path = "Target Support Files/Pods-DronelinkExample/Pods-DronelinkExample.debug.xcconfig"; sourceTree = "<group>"; };
-		BD17A38ACB4169FD47F6485A /* Pods_DronelinkExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DronelinkExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24BB50C52385894D0039C86F /* dronelink-kernel.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "dronelink-kernel.js"; sourceTree = "<group>"; };
+		3545F00798A3C48DA4BA9898 /* Pods-DronelinkDJIExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DronelinkDJIExample.release.xcconfig"; path = "Target Support Files/Pods-DronelinkDJIExample/Pods-DronelinkDJIExample.release.xcconfig"; sourceTree = "<group>"; };
+		5F6A49BC50905484FD0203FF /* Pods-DronelinkDJIExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DronelinkDJIExample.release.xcconfig"; path = "Target Support Files/Pods-DronelinkDJIExample/Pods-DronelinkDJIExample.release.xcconfig"; sourceTree = "<group>"; };
+		6FD850AC5B1C9B81AD65D276 /* Pods-DronelinkDJIExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DronelinkDJIExample.debug.xcconfig"; path = "Target Support Files/Pods-DronelinkDJIExample/Pods-DronelinkDJIExample.debug.xcconfig"; sourceTree = "<group>"; };
+		E6C81F75A081B7856123B914 /* Pods_DronelinkDJIExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DronelinkDJIExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE71762E3370AF5E8442C192 /* Pods-DronelinkDJIExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DronelinkDJIExample.debug.xcconfig"; path = "Target Support Files/Pods-DronelinkDJIExample/Pods-DronelinkDJIExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F6E41EF027D306A96AE18D3 /* Pods_DronelinkExample.framework in Frameworks */,
+				6B77199810344999725BEC37 /* Pods_DronelinkDJIExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,7 +49,7 @@
 		244E1D10236787B0004B1691 = {
 			isa = PBXGroup;
 			children = (
-				244E1D1B236787B0004B1691 /* DronelinkExample */,
+				244E1D1B236787B0004B1691 /* DronelinkDJIExample */,
 				244E1D1A236787B0004B1691 /* Products */,
 				C3C15A4383CB8517C05E70F1 /* Pods */,
 				E171767A4672ECF2F49430A2 /* Frameworks */,
@@ -55,30 +59,33 @@
 		244E1D1A236787B0004B1691 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				244E1D19236787B0004B1691 /* DronelinkExample.app */,
+				244E1D19236787B0004B1691 /* DronelinkDJIExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		244E1D1B236787B0004B1691 /* DronelinkExample */ = {
+		244E1D1B236787B0004B1691 /* DronelinkDJIExample */ = {
 			isa = PBXGroup;
 			children = (
 				244E1D1C236787B0004B1691 /* AppDelegate.swift */,
 				244E1D20236787B0004B1691 /* ViewController.swift */,
+				24BB50C52385894D0039C86F /* dronelink-kernel.js */,
 				244E1D3023678898004B1691 /* plan.json */,
 				244E1D22236787B0004B1691 /* Main.storyboard */,
 				244E1D25236787B1004B1691 /* Assets.xcassets */,
 				244E1D27236787B1004B1691 /* LaunchScreen.storyboard */,
 				244E1D2A236787B2004B1691 /* Info.plist */,
 			);
-			path = DronelinkExample;
+			path = DronelinkDJIExample;
 			sourceTree = "<group>";
 		};
 		C3C15A4383CB8517C05E70F1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6FD850AC5B1C9B81AD65D276 /* Pods-DronelinkExample.debug.xcconfig */,
-				5F6A49BC50905484FD0203FF /* Pods-DronelinkExample.release.xcconfig */,
+				6FD850AC5B1C9B81AD65D276 /* Pods-DronelinkDJIExample.debug.xcconfig */,
+				5F6A49BC50905484FD0203FF /* Pods-DronelinkDJIExample.release.xcconfig */,
+				EE71762E3370AF5E8442C192 /* Pods-DronelinkDJIExample.debug.xcconfig */,
+				3545F00798A3C48DA4BA9898 /* Pods-DronelinkDJIExample.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -86,7 +93,7 @@
 		E171767A4672ECF2F49430A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BD17A38ACB4169FD47F6485A /* Pods_DronelinkExample.framework */,
+				E6C81F75A081B7856123B914 /* Pods_DronelinkDJIExample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -94,9 +101,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		244E1D18236787B0004B1691 /* DronelinkExample */ = {
+		244E1D18236787B0004B1691 /* DronelinkDJIExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 244E1D2D236787B2004B1691 /* Build configuration list for PBXNativeTarget "DronelinkExample" */;
+			buildConfigurationList = 244E1D2D236787B2004B1691 /* Build configuration list for PBXNativeTarget "DronelinkDJIExample" */;
 			buildPhases = (
 				912A2C18C6497BB8ACCDD81C /* [CP] Check Pods Manifest.lock */,
 				244E1D15236787B0004B1691 /* Sources */,
@@ -108,9 +115,9 @@
 			);
 			dependencies = (
 			);
-			name = DronelinkExample;
-			productName = DronelinkExample;
-			productReference = 244E1D19236787B0004B1691 /* DronelinkExample.app */;
+			name = DronelinkDJIExample;
+			productName = DronelinkDJIExample;
+			productReference = 244E1D19236787B0004B1691 /* DronelinkDJIExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -128,7 +135,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 244E1D14236787B0004B1691 /* Build configuration list for PBXProject "DronelinkExample" */;
+			buildConfigurationList = 244E1D14236787B0004B1691 /* Build configuration list for PBXProject "DronelinkDJIExample" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -141,7 +148,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				244E1D18236787B0004B1691 /* DronelinkExample */,
+				244E1D18236787B0004B1691 /* DronelinkDJIExample */,
 			);
 		};
 /* End PBXProject section */
@@ -154,6 +161,7 @@
 				244E1D3123678898004B1691 /* plan.json in Resources */,
 				244E1D29236787B1004B1691 /* LaunchScreen.storyboard in Resources */,
 				244E1D26236787B1004B1691 /* Assets.xcassets in Resources */,
+				24BB50C62385894D0039C86F /* dronelink-kernel.js in Resources */,
 				244E1D24236787B0004B1691 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,15 +175,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DronelinkExample/Pods-DronelinkExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-DronelinkDJIExample/Pods-DronelinkDJIExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DronelinkExample/Pods-DronelinkExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-DronelinkDJIExample/Pods-DronelinkDJIExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DronelinkExample/Pods-DronelinkExample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DronelinkDJIExample/Pods-DronelinkDJIExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		912A2C18C6497BB8ACCDD81C /* [CP] Check Pods Manifest.lock */ = {
@@ -193,7 +201,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DronelinkExample-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-DronelinkDJIExample-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -350,7 +358,7 @@
 		};
 		244E1D2E236787B2004B1691 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6FD850AC5B1C9B81AD65D276 /* Pods-DronelinkExample.debug.xcconfig */;
+			baseConfigurationReference = EE71762E3370AF5E8442C192 /* Pods-DronelinkDJIExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -360,15 +368,15 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = DronelinkExample/Info.plist;
+				INFOPLIST_FILE = DronelinkDJIExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dronelink.DronelinkExample;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dronelink.DronelinkDJIExample;
+				PRODUCT_NAME = DronelinkDJIExample;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -376,7 +384,7 @@
 		};
 		244E1D2F236787B2004B1691 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F6A49BC50905484FD0203FF /* Pods-DronelinkExample.release.xcconfig */;
+			baseConfigurationReference = 3545F00798A3C48DA4BA9898 /* Pods-DronelinkDJIExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -386,15 +394,15 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = DronelinkExample/Info.plist;
+				INFOPLIST_FILE = DronelinkDJIExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dronelink.DronelinkExample;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dronelink.DronelinkDJIExample;
+				PRODUCT_NAME = DronelinkDJIExample;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -403,7 +411,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		244E1D14236787B0004B1691 /* Build configuration list for PBXProject "DronelinkExample" */ = {
+		244E1D14236787B0004B1691 /* Build configuration list for PBXProject "DronelinkDJIExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				244E1D2B236787B2004B1691 /* Debug */,
@@ -412,7 +420,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		244E1D2D236787B2004B1691 /* Build configuration list for PBXNativeTarget "DronelinkExample" */ = {
+		244E1D2D236787B2004B1691 /* Build configuration list for PBXNativeTarget "DronelinkDJIExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				244E1D2E236787B2004B1691 /* Debug */,

@@ -2,7 +2,7 @@ platform :ios, '12.0'
 inhibit_all_warnings!
 use_frameworks!
 
-target 'DronelinkExample' do
+target 'DronelinkDJIExample' do
   pod 'DronelinkCore', '~> 1.1.0'
   pod 'DronelinkCoreUI', '~> 1.0.2'
   pod 'DronelinkDJI', '~> 1.1.0'

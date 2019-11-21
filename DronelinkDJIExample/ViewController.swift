@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  DronelinkExample
+//  DronelinkDJIExample
 //
 //  Created by Jim McAndrew on 10/28/19.
 //  Copyright © 2019 Dronelink. All rights reserved.
@@ -11,7 +11,7 @@ import os
 import UIKit
 
 class ViewController: UIViewController {
-    private let log = OSLog(subsystem: "DronelinkExample", category: "ViewController")
+    private let log = OSLog(subsystem: "DronelinkDJIExample", category: "ViewController")
     
     @IBAction func onDashboard(_ sender: Any) {
         let dashboard = DJIDashboardViewController.create(droneSessionManager: AppDelegate.droneSessionManager)
