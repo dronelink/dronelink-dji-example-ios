@@ -13,7 +13,6 @@
 		244E1D26236787B1004B1691 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 244E1D25236787B1004B1691 /* Assets.xcassets */; };
 		244E1D29236787B1004B1691 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 244E1D27236787B1004B1691 /* LaunchScreen.storyboard */; };
 		244E1D3123678898004B1691 /* plan.json in Resources */ = {isa = PBXBuildFile; fileRef = 244E1D3023678898004B1691 /* plan.json */; };
-		24BB50C62385894D0039C86F /* dronelink-kernel.js in Resources */ = {isa = PBXBuildFile; fileRef = 24BB50C52385894D0039C86F /* dronelink-kernel.js */; };
 		6B77199810344999725BEC37 /* Pods_DronelinkDJIExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C81F75A081B7856123B914 /* Pods_DronelinkDJIExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +25,6 @@
 		244E1D28236787B1004B1691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		244E1D2A236787B2004B1691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		244E1D3023678898004B1691 /* plan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = plan.json; sourceTree = "<group>"; };
-		24BB50C52385894D0039C86F /* dronelink-kernel.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "dronelink-kernel.js"; sourceTree = "<group>"; };
 		3545F00798A3C48DA4BA9898 /* Pods-DronelinkDJIExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DronelinkDJIExample.release.xcconfig"; path = "Target Support Files/Pods-DronelinkDJIExample/Pods-DronelinkDJIExample.release.xcconfig"; sourceTree = "<group>"; };
 		5F6A49BC50905484FD0203FF /* Pods-DronelinkDJIExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DronelinkDJIExample.release.xcconfig"; path = "Target Support Files/Pods-DronelinkDJIExample/Pods-DronelinkDJIExample.release.xcconfig"; sourceTree = "<group>"; };
 		6FD850AC5B1C9B81AD65D276 /* Pods-DronelinkDJIExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DronelinkDJIExample.debug.xcconfig"; path = "Target Support Files/Pods-DronelinkDJIExample/Pods-DronelinkDJIExample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -69,7 +67,6 @@
 			children = (
 				244E1D1C236787B0004B1691 /* AppDelegate.swift */,
 				244E1D20236787B0004B1691 /* ViewController.swift */,
-				24BB50C52385894D0039C86F /* dronelink-kernel.js */,
 				244E1D3023678898004B1691 /* plan.json */,
 				244E1D22236787B0004B1691 /* Main.storyboard */,
 				244E1D25236787B1004B1691 /* Assets.xcassets */,
@@ -109,7 +106,7 @@
 				244E1D15236787B0004B1691 /* Sources */,
 				244E1D16236787B0004B1691 /* Frameworks */,
 				244E1D17236787B0004B1691 /* Resources */,
-				87070A773E8C8EE104B73990 /* [CP] Embed Pods Frameworks */,
+				99D479D49551D9093C7A074E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,7 +158,6 @@
 				244E1D3123678898004B1691 /* plan.json in Resources */,
 				244E1D29236787B1004B1691 /* LaunchScreen.storyboard in Resources */,
 				244E1D26236787B1004B1691 /* Assets.xcassets in Resources */,
-				24BB50C62385894D0039C86F /* dronelink-kernel.js in Resources */,
 				244E1D24236787B0004B1691 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,23 +165,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		87070A773E8C8EE104B73990 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DronelinkDJIExample/Pods-DronelinkDJIExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DronelinkDJIExample/Pods-DronelinkDJIExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DronelinkDJIExample/Pods-DronelinkDJIExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		912A2C18C6497BB8ACCDD81C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -206,6 +185,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99D479D49551D9093C7A074E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DronelinkDJIExample/Pods-DronelinkDJIExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DronelinkDJIExample/Pods-DronelinkDJIExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DronelinkDJIExample/Pods-DronelinkDJIExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -292,7 +288,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -346,7 +342,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -374,8 +370,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dronelink.DronelinkDJIExample;
+				MARKETING_VERSION = 1.1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dronelink.DronelinkExample;
 				PRODUCT_NAME = DronelinkDJIExample;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -400,8 +396,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dronelink.DronelinkDJIExample;
+				MARKETING_VERSION = 1.1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dronelink.DronelinkExample;
 				PRODUCT_NAME = DronelinkDJIExample;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

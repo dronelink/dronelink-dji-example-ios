@@ -10,9 +10,11 @@
 
 ## Setup
 
+- pod install
 - Update bundle identifier to match what was registered with DJI
 - Provide DJISDK key and Mapbox access token in info.plist
 - Provide Dronelink environment key in AppDelegate
+- Add dronelink-kernel.js to the project's root folder
 
 ## Author
 
