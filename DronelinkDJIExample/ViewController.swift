@@ -6,6 +6,7 @@
 //  Copyright © 2019 Dronelink. All rights reserved.
 //
 import DronelinkCore
+import DronelinkDJI
 import DronelinkDJIUI
 import os
 import UIKit
@@ -22,7 +23,7 @@ class ViewController: UIViewController {
             else {
                 return
             }
-            
+
             do {
                 try Dronelink.shared.load(plan: plan, delegate: self)
             }
@@ -47,7 +48,7 @@ extension ViewController: MissionExecutorDelegate {
     func onMissionExecuted(executor: MissionExecutor, engagement: MissionExecutor.Engagement) {}
     
     func onMissionDisengaged(executor: MissionExecutor, engagement: MissionExecutor.Engagement, reason: Mission.Message) {
-        //save mission to back-end using: executor.missionSerialized
+        //save mission to back-end using: executor.missionSerializedAsync
         //get asset manifest using: executor.assetManifestSerialized
         //load mission later using Dronelink.shared.load(mission: ...
     }
