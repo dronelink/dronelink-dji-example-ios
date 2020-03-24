@@ -18,11 +18,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
+    var assetManifest: AssetManifest?
+    var assetIndex: Int?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         AppDelegate.droneSessionManager.add(delegate: self)
         Dronelink.shared.register(environmentKey: "INSERT YOUR ENVIRONMENT KEY HERE")
         do {
             try Dronelink.shared.install(kernel: Bundle.main.url(forResource: "dronelink-kernel", withExtension: "js")!)
+            assetManifest = try? Dronelink.shared.createAssetManifest(id: "example", tags: ["tag1", "tag2"])
+            assetIndex = assetManifest?.addAsset(key: "key", descriptors: Mission.Descriptors(name: "name", description: "description", tags: ["tag1", "tag2"]))
         }
         catch DronelinkError.kernelInvalid {
             os_log(.error, log: self.log, "Dronelink Kernel Invalid")
@@ -33,6 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         catch {
             os_log(.error, log: self.log, "Unknown error!")
         }
+        
         return true
     }
 }
@@ -60,5 +66,8 @@ extension AppDelegate: DroneSessionDelegate {
 
     func onCommandFinished(session: DroneSession, command: MissionCommand, error: Error?) {}
     
-    func onCameraFileGenerated(session: DroneSession, file: CameraFile) {}
+    func onCameraFileGenerated(session: DroneSession, file: CameraFile) {
+        assetManifest?.addCameraFile(assetIndex: assetIndex ?? 0, cameraFile: file)
+        //assetManifest?.serialized to get the manually tracked asset manifest json
+    }
 }

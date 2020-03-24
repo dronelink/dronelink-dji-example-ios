@@ -10,6 +10,7 @@ import DronelinkDJI
 import DronelinkDJIUI
 import os
 import UIKit
+import DJISDK
 
 class ViewController: UIViewController {
     private let log = OSLog(subsystem: "DronelinkDJIExample", category: "ViewController")
