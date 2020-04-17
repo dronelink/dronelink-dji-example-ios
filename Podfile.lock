@@ -4,10 +4,11 @@ PODS:
     - DJI-UXSDK-iOS/Core (= 4.11.1)
   - DJI-UXSDK-iOS/Core (4.11.1)
   - DJIWidget (1.6.2)
-  - DronelinkCore (1.3.0)
-  - DronelinkCoreUI (1.1.1):
-    - DronelinkCore (~> 1.3.0)
+  - DronelinkCore (1.4.0)
+  - DronelinkCoreUI (1.2.0):
+    - DronelinkCore (~> 1.4.0)
     - Mapbox-iOS-SDK (~> 5.7.0)
+    - MaterialComponents/ActivityIndicator (~> 107.4.0)
     - MaterialComponents/Buttons (~> 107.4.0)
     - "MaterialComponents/Buttons+Theming (~> 107.4.0)"
     - MaterialComponents/Dialogs (~> 107.4.0)
@@ -17,21 +18,26 @@ PODS:
     - MaterialComponents/Snackbar (~> 107.4.0)
     - MaterialComponents/TextFields (~> 107.4.0)
     - SnapKit (~> 5.0.1)
-  - DronelinkDJI (1.3.0):
+  - DronelinkDJI (1.4.0):
     - DJI-SDK-iOS (~> 4.11.2)
-    - DronelinkCore (~> 1.3.0)
-  - DronelinkDJIUI (1.1.1):
+    - DronelinkCore (~> 1.4.0)
+  - DronelinkDJIUI (1.2.0):
     - DJI-SDK-iOS (~> 4.11.2)
     - DJI-UXSDK-iOS (~> 4.11.1)
     - DJIWidget (~> 1.6.2)
-    - DronelinkCore (~> 1.3.0)
-    - DronelinkCoreUI (~> 1.1.1)
-    - DronelinkDJI (~> 1.3.0)
+    - DronelinkCore (~> 1.4.0)
+    - DronelinkCoreUI (~> 1.2.0)
+    - DronelinkDJI (~> 1.4.0)
     - MaterialComponents/Palettes (~> 107.4.0)
     - SnapKit (~> 5.0.1)
   - Mapbox-iOS-SDK (5.7.0):
     - MapboxMobileEvents (= 0.10.2)
   - MapboxMobileEvents (0.10.2)
+  - MaterialComponents/ActivityIndicator (107.4.0):
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Application
+    - MDFInternationalization
+    - MotionAnimator (~> 2.0)
   - MaterialComponents/AnimationTiming (107.4.0)
   - MaterialComponents/Availability (107.4.0)
   - MaterialComponents/Buttons (107.4.0):
@@ -168,10 +174,13 @@ PODS:
     - MaterialComponents/private/Math
   - MDFInternationalization (2.0.0)
   - MDFTextAccessibility (2.0.0)
+  - MotionAnimator (2.8.1):
+    - MotionInterchange (~> 1.6)
+  - MotionInterchange (1.6.0)
   - SnapKit (5.0.1)
 
 DEPENDENCIES:
-  - DronelinkDJIUI (~> 1.1.1)
+  - DronelinkDJIUI (~> 1.2.0)
 
 SPEC REPOS:
   trunk:
@@ -187,23 +196,27 @@ SPEC REPOS:
     - MaterialComponents
     - MDFInternationalization
     - MDFTextAccessibility
+    - MotionAnimator
+    - MotionInterchange
     - SnapKit
 
 SPEC CHECKSUMS:
   DJI-SDK-iOS: dd421937079d101dee461eb5c311cb9d26404dd7
   DJI-UXSDK-iOS: 29948f571d2e6c0e3131eb93ea77a0e4582f1932
   DJIWidget: cc635356515eaac7e9698eb9b1b8c5764728e3c5
-  DronelinkCore: ebe28a8caee706b112214dd39647d4e100a478c7
-  DronelinkCoreUI: d0d8fdb3ea5f8f1175ca713bc337d1c2e5a01481
-  DronelinkDJI: 1eba7e9e7cdf8b524f5a343c6071d3cea7584b3d
-  DronelinkDJIUI: 420ee690142d52c076fe17cd0d3ba40883233ef3
+  DronelinkCore: 01c112b4e9af09a14c5e56ece0ee045f5a8f6759
+  DronelinkCoreUI: ad2c7d45ede2509f8dbdd5652a9ef558ee0a074b
+  DronelinkDJI: 2b8f1e60acb4537d5d1fcd943f67d76ba05332b0
+  DronelinkDJIUI: b4b74d596dc3d3e0ed21c5e59e933f70c9afc01a
   Mapbox-iOS-SDK: 1b7cb0e739247d20ef75f5f14aa6ce34e1f0660f
   MapboxMobileEvents: 2bc0ca2eedb627b73cf403258dce2b2fa98074a6
   MaterialComponents: 52e2ade4684e3017eff7f62587b37522d217ea50
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
+  MotionAnimator: ee16aa30567c5bae0fb2750c132915829cfaaf8a
+  MotionInterchange: ead0e3ae1f3a5fb539e289debbc7ae036160a10d
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 23da53e6f7c5ed7f02248714b05bca9ebf05bbd1
+PODFILE CHECKSUM: 9ebbfcd9983f832b95da8c9613dc42bb09194a8e
 
 COCOAPODS: 1.9.1

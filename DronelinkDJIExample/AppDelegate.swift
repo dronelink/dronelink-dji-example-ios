@@ -25,6 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         AppDelegate.droneSessionManager.add(delegate: self)
         Dronelink.shared.register(environmentKey: "INSERT YOUR ENVIRONMENT KEY HERE")
         do {
+            //use Dronelink.KernelVersionTarget to see the minimum compatible kernel version that the current core supports
             try Dronelink.shared.install(kernel: Bundle.main.url(forResource: "dronelink-kernel", withExtension: "js")!)
             assetManifest = try? Dronelink.shared.createAssetManifest(id: "example", tags: ["tag1", "tag2"])
             assetIndex = assetManifest?.addAsset(key: "key", descriptors: Mission.Descriptors(name: "name", description: "description", tags: ["tag1", "tag2"]))
