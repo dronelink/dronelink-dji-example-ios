@@ -14,7 +14,7 @@ import DJISDK
 
 class ViewController: UIViewController {
     private let log = OSLog(subsystem: "DronelinkDJIExample", category: "ViewController")
-
+    
     @IBAction func onDashboard(_ sender: Any) {
         loadPlan()
         //loadFunc()
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
             return
         }
         
-        let dashboard = DJIDashboardViewController.create(droneSessionManager: AppDelegate.droneSessionManager, delegate: self)
+        let dashboard = DJIDashboardViewController.create(droneSessionManager: AppDelegate.droneSessionManager, mapCredentialsKey: AppDelegate.mapCredentialsKey, delegate: self)
         present(dashboard, animated: true) {
             do {
                 try Dronelink.shared.load(plan: plan, delegate: self) { error in
@@ -55,7 +55,7 @@ class ViewController: UIViewController {
             return
         }
         
-        let dashboard = DJIDashboardViewController.create(droneSessionManager: AppDelegate.droneSessionManager, delegate: self)
+        let dashboard = DJIDashboardViewController.create(droneSessionManager: AppDelegate.droneSessionManager, mapCredentialsKey: AppDelegate.mapCredentialsKey, delegate: self)
         present(dashboard, animated: true) {
             do {
                 try Dronelink.shared.load(_func: _func, delegate: self) { error in

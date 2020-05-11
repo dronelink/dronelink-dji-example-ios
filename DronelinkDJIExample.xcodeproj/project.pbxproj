@@ -112,7 +112,7 @@
 				244E1D15236787B0004B1691 /* Sources */,
 				244E1D16236787B0004B1691 /* Frameworks */,
 				244E1D17236787B0004B1691 /* Resources */,
-				AA774E0356141126B7BEA41B /* [CP] Embed Pods Frameworks */,
+				966F70076B46A54DB58D9E19 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,7 +195,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AA774E0356141126B7BEA41B /* [CP] Embed Pods Frameworks */ = {
+		966F70076B46A54DB58D9E19 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -378,7 +378,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4.0;
+				MARKETING_VERSION = 1.5.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dronelink.DronelinkExample;
 				PRODUCT_NAME = DronelinkDJIExample;
 				SWIFT_VERSION = 5.0;
@@ -404,7 +404,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4.0;
+				MARKETING_VERSION = 1.5.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dronelink.DronelinkExample;
 				PRODUCT_NAME = DronelinkDJIExample;
 				SWIFT_VERSION = 5.0;

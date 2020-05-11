@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private let log = OSLog(subsystem: "DronelinkDJIExample", category: "AppDelegate")
     
     internal static let droneSessionManager = DJIDroneSessionManager()
+    internal static let mapCredentialsKey = "INSERT YOUR CREDENTIALS KEY HERE"
     
     var window: UIWindow?
     
