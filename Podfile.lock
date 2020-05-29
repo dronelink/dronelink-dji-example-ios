@@ -1,10 +1,13 @@
 PODS:
+  - Agrume (5.6.8):
+    - SwiftyGif
   - DJI-SDK-iOS (4.12)
   - DJI-UXSDK-iOS (4.12)
   - DJIWidget (1.6.2)
-  - DronelinkCore (1.5.0)
-  - DronelinkCoreUI (1.3.0):
-    - DronelinkCore (~> 1.5.0)
+  - DronelinkCore (1.6.0)
+  - DronelinkCoreUI (1.4.0):
+    - Agrume (~> 5.6.8)
+    - DronelinkCore (~> 1.6.0)
     - Kingfisher (~> 5.13.4)
     - Mapbox-iOS-SDK (~> 5.9.0)
     - MaterialComponents/ActivityIndicator (~> 109.2.0)
@@ -16,18 +19,18 @@ PODS:
     - MaterialComponents/ProgressView (~> 109.2.0)
     - MaterialComponents/Snackbar (~> 109.2.0)
     - MaterialComponents/TextFields (~> 109.2.0)
-    - MicrosoftMapsSDK (~> 1.1.3)
+    - MicrosoftMapsSDK (~> 1.1.4)
     - SnapKit (~> 5.0.1)
-  - DronelinkDJI (1.5.0):
+  - DronelinkDJI (1.6.0):
     - DJI-SDK-iOS (~> 4.12)
-    - DronelinkCore (~> 1.5.0)
-  - DronelinkDJIUI (1.3.0):
+    - DronelinkCore (~> 1.6.0)
+  - DronelinkDJIUI (1.4.0):
     - DJI-SDK-iOS (~> 4.12)
     - DJI-UXSDK-iOS (~> 4.12)
     - DJIWidget (~> 1.6.2)
-    - DronelinkCore (~> 1.5.0)
-    - DronelinkCoreUI (~> 1.3.0)
-    - DronelinkDJI (~> 1.5.0)
+    - DronelinkCore (~> 1.6.0)
+    - DronelinkCoreUI (~> 1.4.0)
+    - DronelinkDJI (~> 1.6.0)
     - MaterialComponents/Palettes (~> 109.2.0)
     - SnapKit (~> 5.0.1)
   - Kingfisher (5.13.4):
@@ -177,17 +180,19 @@ PODS:
     - MaterialComponents/private/Math
   - MDFInternationalization (2.0.0)
   - MDFTextAccessibility (2.0.0)
-  - MicrosoftMapsSDK (1.1.3)
+  - MicrosoftMapsSDK (1.1.4)
   - MotionAnimator (2.8.1):
     - MotionInterchange (~> 1.6)
   - MotionInterchange (1.6.0)
   - SnapKit (5.0.1)
+  - SwiftyGif (5.3.0)
 
 DEPENDENCIES:
-  - DronelinkDJIUI (~> 1.3.0)
+  - DronelinkDJIUI (~> 1.4.0)
 
 SPEC REPOS:
   trunk:
+    - Agrume
     - DJI-SDK-iOS
     - DJI-UXSDK-iOS
     - DJIWidget
@@ -205,26 +210,29 @@ SPEC REPOS:
     - MotionAnimator
     - MotionInterchange
     - SnapKit
+    - SwiftyGif
 
 SPEC CHECKSUMS:
+  Agrume: 53c2be9b06caef4b4996a2886a56b9e901bcc6c0
   DJI-SDK-iOS: 0e8cbe7f6949c39da1ad2c4926090baeab7271a2
   DJI-UXSDK-iOS: d85af39d5b37c1c0b2a313d9eb7a67f0dff37370
   DJIWidget: cc635356515eaac7e9698eb9b1b8c5764728e3c5
-  DronelinkCore: 2bd4841779b2bef180d0f9bf307e2ab1972965d0
-  DronelinkCoreUI: 3ac9d7ec04588afe97281ced49c6a6105b8edb6d
-  DronelinkDJI: 6497ec0b2f5a59482e6fc44fcdb8db82b6398002
-  DronelinkDJIUI: 185f9b89a6177326bf9c3bd20a35feea9625456f
+  DronelinkCore: 366cc887b5362f9cef35632426554a484d66324f
+  DronelinkCoreUI: 7c9789e962cf51eb05d925f3dd417e1e2c5b4b92
+  DronelinkDJI: ca047bf5210e3c688a42a5c0946c847b2dee388e
+  DronelinkDJIUI: e897a611d53ef816a32812a549af2fc8273659f7
   Kingfisher: d2279a7abece3c7f25a80cd2b7f363ca5cf3f44c
   Mapbox-iOS-SDK: a5915700ec84bc1a7f8b3e746d474789e35b7956
   MapboxMobileEvents: 2bc0ca2eedb627b73cf403258dce2b2fa98074a6
   MaterialComponents: 59bfbfe08fc1ac204b21ba69100beabb932e3699
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
-  MicrosoftMapsSDK: fc934c1b607d58a3c2acefa3644a6d9f9c1801e7
+  MicrosoftMapsSDK: 64317bb343e3ef26507f61617889a6918a1b59d4
   MotionAnimator: ee16aa30567c5bae0fb2750c132915829cfaaf8a
   MotionInterchange: ead0e3ae1f3a5fb539e289debbc7ae036160a10d
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwiftyGif: e466e86c660d343357ab944a819a101c4127cb40
 
-PODFILE CHECKSUM: be4f46fe410f625c7ab04bb5b6e02e2528be12eb
+PODFILE CHECKSUM: fc8c5ec337aca91d54b968d4fe6b9c65ac86c052
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.9.2
