@@ -100,6 +100,8 @@ extension ViewController: MissionExecutorDelegate {
 }
 
 extension ViewController: FuncExecutorDelegate {
+    func onFuncInputsChanged(executor: FuncExecutor) {}
+    
     func onFuncExecuted(executor: FuncExecutor) {
         guard let mission = executor.missionSerialized else {
             return
