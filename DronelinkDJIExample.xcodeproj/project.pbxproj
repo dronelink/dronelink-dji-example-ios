@@ -3,26 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		241FE45F24902754000F72AD /* parrot-test.json in Resources */ = {isa = PBXBuildFile; fileRef = 241FE45E24902753000F72AD /* parrot-test.json */; };
 		244E1D1D236787B0004B1691 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244E1D1C236787B0004B1691 /* AppDelegate.swift */; };
 		244E1D21236787B0004B1691 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244E1D20236787B0004B1691 /* ViewController.swift */; };
 		244E1D24236787B0004B1691 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 244E1D22236787B0004B1691 /* Main.storyboard */; };
 		244E1D26236787B1004B1691 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 244E1D25236787B1004B1691 /* Assets.xcassets */; };
 		244E1D29236787B1004B1691 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 244E1D27236787B1004B1691 /* LaunchScreen.storyboard */; };
-		2469C90C24BE2A7400D069F4 /* demo.json in Resources */ = {isa = PBXBuildFile; fileRef = 2469C90B24BE2A7400D069F4 /* demo.json */; };
-		247E09E6244A0FAE00D002A2 /* dronelink-kernel.js in Resources */ = {isa = PBXBuildFile; fileRef = 247E09E5244A0FAE00D002A2 /* dronelink-kernel.js */; };
 		247E09E8244A10EB00D002A2 /* func.lz in Resources */ = {isa = PBXBuildFile; fileRef = 247E09E7244A10EB00D002A2 /* func.lz */; };
-		249CFB9E249A7EF90090F44D /* airmap.lz in Resources */ = {isa = PBXBuildFile; fileRef = 249CFB9D249A7EF90090F44D /* airmap.lz */; };
 		249EEE74243279CF0065360A /* plan.lz in Resources */ = {isa = PBXBuildFile; fileRef = 249EEE73243279CF0065360A /* plan.lz */; };
 		6B77199810344999725BEC37 /* Pods_DronelinkDJIExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C81F75A081B7856123B914 /* Pods_DronelinkDJIExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		241FE45E24902753000F72AD /* parrot-test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "parrot-test.json"; sourceTree = "<group>"; };
 		244E1D19236787B0004B1691 /* DronelinkDJIExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DronelinkDJIExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		244E1D1C236787B0004B1691 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		244E1D20236787B0004B1691 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,10 +25,7 @@
 		244E1D25236787B1004B1691 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		244E1D28236787B1004B1691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		244E1D2A236787B2004B1691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2469C90B24BE2A7400D069F4 /* demo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = demo.json; sourceTree = "<group>"; };
-		247E09E5244A0FAE00D002A2 /* dronelink-kernel.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "dronelink-kernel.js"; sourceTree = "<group>"; };
 		247E09E7244A10EB00D002A2 /* func.lz */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = func.lz; sourceTree = "<group>"; };
-		249CFB9D249A7EF90090F44D /* airmap.lz */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = airmap.lz; sourceTree = "<group>"; };
 		249EEE73243279CF0065360A /* plan.lz */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plan.lz; sourceTree = "<group>"; };
 		3545F00798A3C48DA4BA9898 /* Pods-DronelinkDJIExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DronelinkDJIExample.release.xcconfig"; path = "Target Support Files/Pods-DronelinkDJIExample/Pods-DronelinkDJIExample.release.xcconfig"; sourceTree = "<group>"; };
 		5F6A49BC50905484FD0203FF /* Pods-DronelinkDJIExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DronelinkDJIExample.release.xcconfig"; path = "Target Support Files/Pods-DronelinkDJIExample/Pods-DronelinkDJIExample.release.xcconfig"; sourceTree = "<group>"; };
@@ -77,12 +69,8 @@
 			children = (
 				244E1D1C236787B0004B1691 /* AppDelegate.swift */,
 				244E1D20236787B0004B1691 /* ViewController.swift */,
-				249CFB9D249A7EF90090F44D /* airmap.lz */,
 				249EEE73243279CF0065360A /* plan.lz */,
 				247E09E7244A10EB00D002A2 /* func.lz */,
-				2469C90B24BE2A7400D069F4 /* demo.json */,
-				241FE45E24902753000F72AD /* parrot-test.json */,
-				247E09E5244A0FAE00D002A2 /* dronelink-kernel.js */,
 				244E1D22236787B0004B1691 /* Main.storyboard */,
 				244E1D25236787B1004B1691 /* Assets.xcassets */,
 				244E1D27236787B1004B1691 /* LaunchScreen.storyboard */,
@@ -173,12 +161,8 @@
 				244E1D29236787B1004B1691 /* LaunchScreen.storyboard in Resources */,
 				244E1D26236787B1004B1691 /* Assets.xcassets in Resources */,
 				249EEE74243279CF0065360A /* plan.lz in Resources */,
-				241FE45F24902754000F72AD /* parrot-test.json in Resources */,
 				247E09E8244A10EB00D002A2 /* func.lz in Resources */,
-				247E09E6244A0FAE00D002A2 /* dronelink-kernel.js in Resources */,
 				244E1D24236787B0004B1691 /* Main.storyboard in Resources */,
-				2469C90C24BE2A7400D069F4 /* demo.json in Resources */,
-				249CFB9E249A7EF90090F44D /* airmap.lz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,7 +374,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.6.2;
+				MARKETING_VERSION = 1.6.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dronelink.DronelinkExample;
 				PRODUCT_NAME = DronelinkDJIExample;
 				SWIFT_VERSION = 5.0;
@@ -416,7 +400,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.6.2;
+				MARKETING_VERSION = 1.6.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dronelink.DronelinkExample;
 				PRODUCT_NAME = DronelinkDJIExample;
 				SWIFT_VERSION = 5.0;
