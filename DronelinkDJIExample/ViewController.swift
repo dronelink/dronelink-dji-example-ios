@@ -28,7 +28,7 @@ class ViewController: UIViewController {
             return
         }
         
-        let dashboard = DJIDashboardViewController.create(droneSessionManager: AppDelegate.droneSessionManager, mapCredentialsKey: AppDelegate.mapCredentialsKey, delegate: self)
+        let dashboard = DJIDashboardViewController.create(droneSessionManager: AppDelegate.droneSessionManager, mapCredentialsKey: AppDelegate.mapCredentialsKey)
         present(dashboard, animated: true) {
             do {
                 try Dronelink.shared.load(plan: plan, delegate: self) { error in
@@ -55,7 +55,7 @@ class ViewController: UIViewController {
             return
         }
         
-        let dashboard = DJIDashboardViewController.create(droneSessionManager: AppDelegate.droneSessionManager, mapCredentialsKey: AppDelegate.mapCredentialsKey, delegate: self)
+        let dashboard = DJIDashboardViewController.create(droneSessionManager: AppDelegate.droneSessionManager, mapCredentialsKey: AppDelegate.mapCredentialsKey)
         present(dashboard, animated: true) {
             do {
                 try Dronelink.shared.load(_func: _func, delegate: self) { error in
@@ -75,12 +75,6 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: DJIDashboardViewControllerDelegate {
-    func onDashboardDismissed() {
-        Dronelink.shared.unloadMission()
-    }
-}
-
 extension ViewController: MissionExecutorDelegate {
     func onMissionEstimating(executor: MissionExecutor) {}
     
@@ -92,7 +86,7 @@ extension ViewController: MissionExecutorDelegate {
     
     func onMissionExecuted(executor: MissionExecutor, engagement: MissionExecutor.Engagement) {}
     
-    func onMissionDisengaged(executor: MissionExecutor, engagement: MissionExecutor.Engagement, reason: Mission.Message) {
+    func onMissionDisengaged(executor: MissionExecutor, engagement: MissionExecutor.Engagement, reason: Kernel.Message) {
         //save mission to back-end using: executor.missionSerializedAsync
         //get asset manifest using: executor.assetManifestSerialized
         //load mission later using Dronelink.shared.load(mission: ...
@@ -103,7 +97,7 @@ extension ViewController: FuncExecutorDelegate {
     func onFuncInputsChanged(executor: FuncExecutor) {}
     
     func onFuncExecuted(executor: FuncExecutor) {
-        guard let mission = executor.missionSerialized else {
+        guard let mission = executor.executableSerialized else {
             return
         }
         
