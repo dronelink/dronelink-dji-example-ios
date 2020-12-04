@@ -13,9 +13,11 @@
 
 - pod install
 - Update bundle identifier to match what was registered with DJI
-- Provide DJISDK key and Mapbox access token in info.plist
+- Provide DJISDK key in info.plist
+- Provide Mapbox public access token in info.plist
+- Provide Mapbox secret access token in «USER_HOME»/.netrc (https://docs.mapbox.com/ios/maps/overview/)
 - Provide Dronelink environment key and Microsoft maps credentials key in AppDelegate
-- Add dronelink-kernel.js to the project's root folder
+- Add dronelink-kernel.js to the project by dragging it into the root folder in Xcode (select copy when prompted)
 
 ## Author
 
