@@ -14,17 +14,17 @@ import os
 class AppDelegate: UIResponder, UIApplicationDelegate {
     private let log = OSLog(subsystem: "DronelinkDJIExample", category: "AppDelegate")
     
-    internal static let droneSessionManager = DJIDroneSessionManager()
     internal static let mapCredentialsKey = "INSERT YOUR CREDENTIALS KEY HERE"
-    
+
     var window: UIWindow?
     
     var assetManifest: AssetManifest?
     var assetIndex: Int?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        AppDelegate.droneSessionManager.add(delegate: self)
+        Dronelink.shared.add(delegate: self)
         Dronelink.shared.register(environmentKey: "INSERT YOUR ENVIRONMENT KEY HERE")
+        Dronelink.shared.add(droneSessionManager: DJIDroneSessionManager())
         do {
             //use Dronelink.KernelVersionTarget to see the minimum compatible kernel version that the current core supports
             try Dronelink.shared.install(kernel: Bundle.main.url(forResource: "dronelink-kernel", withExtension: "js")!)
@@ -43,6 +43,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
+}
+
+extension AppDelegate: DronelinkDelegate {
+    func onRegistered(error: String?) {}
+    
+    func onDroneSessionManagerAdded(manager: DroneSessionManager) {
+        manager.add(delegate: self)
+    }
+    
+    func onMissionLoaded(executor: MissionExecutor) {}
+    
+    func onMissionUnloaded(executor: MissionExecutor) {}
+    
+    func onFuncLoaded(executor: FuncExecutor) {}
+    
+    func onFuncUnloaded(executor: FuncExecutor) {}
+    
+    func onModeLoaded(executor: ModeExecutor) {}
+    
+    func onModeUnloaded(executor: ModeExecutor) {}
+    
+    func onCameraFocusCalibrationRequested(value: Kernel.CameraFocusCalibration) {}
+    
+    func onCameraFocusCalibrationUpdated(value: Kernel.CameraFocusCalibration) {}
 }
 
 extension AppDelegate: DroneSessionManagerDelegate {
