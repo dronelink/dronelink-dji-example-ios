@@ -312,16 +312,13 @@ extension ViewController: MissionExecutorDelegate {
         }
         
         for waypoint in scriptedWaypoints.enumerated() {
-            if let state = executor.componentExecutionState(componentID: waypoint.element.action.id) {
+            if let state = executor.executionState(componentID: waypoint.element.action.id) {
                 switch state.status {
                 case .pending:
                     os_log(.debug, log: self.log, "Waypoint: %@", "\(waypoint.offset + 1)")
                     return
                     
                 case .executing, .succeeded, .failed:
-                    break
-                    
-                default:
                     break
                 }
             }
@@ -333,6 +330,8 @@ extension ViewController: MissionExecutorDelegate {
         //get asset manifest using: executor.assetManifestSerialized
         //load mission later using Dronelink.shared.load(mission: ...
     }
+    
+    func onMissionUpdatedDisconnected(executor: MissionExecutor, engagement: Executor.Engagement) {}
 }
 
 extension ViewController: FuncExecutorDelegate {
@@ -380,9 +379,7 @@ extension ViewController: ModeExecutorDelegate {
     
     func onModeEngaged(executor: ModeExecutor, engagement: ModeExecutor.Engagement) {}
     
-    func onModeExecuted(executor: ModeExecutor, engagement: ModeExecutor.Engagement) {
-        
-    }
+    func onModeExecuted(executor: ModeExecutor, engagement: ModeExecutor.Engagement) {}
     
     func onModeDisengaged(executor: ModeExecutor, engagement: ModeExecutor.Engagement, reason: Kernel.Message) {}
 }
