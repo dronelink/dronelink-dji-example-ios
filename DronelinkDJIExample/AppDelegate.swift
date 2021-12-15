@@ -96,4 +96,6 @@ extension AppDelegate: DroneSessionDelegate {
         assetManifest?.addCameraFile(assetIndex: assetIndex ?? 0, cameraFile: file)
         //assetManifest?.serialized to get the manually tracked asset manifest json
     }
+    
+    func onVideoFeedSourceUpdated(session: DroneSession, channel: UInt?) {}
 }
