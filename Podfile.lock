@@ -4,10 +4,10 @@ PODS:
   - DJI-SDK-iOS (4.15.2)
   - DJI-UXSDK-iOS (4.14)
   - DJIWidget (1.6.5)
-  - DronelinkCore (3.2.0)
-  - DronelinkCoreUI (3.2.0):
+  - DronelinkCore (3.3.0)
+  - DronelinkCoreUI (3.3.0):
     - Agrume (~> 5.8.0)
-    - DronelinkCore (~> 3.2.0)
+    - DronelinkCore (~> 3.3.0)
     - IQKeyboardManager (~> 6.5.6)
     - Kingfisher (~> 7.1.0)
     - Mapbox-iOS-SDK (~> 6.4.0)
@@ -24,16 +24,16 @@ PODS:
     - MicrosoftMapsSDK (~> 1.2.0)
     - SnapKit (~> 5.0.1)
     - SwiftyUserDefaults (~> 5.3.0)
-  - DronelinkDJI (3.2.0):
+  - DronelinkDJI (3.3.0):
     - DJI-SDK-iOS (~> 4.15.2)
-    - DronelinkCore (~> 3.2.0)
-  - DronelinkDJIUI (3.2.0):
+    - DronelinkCore (~> 3.3.0)
+  - DronelinkDJIUI (3.3.0):
     - DJI-SDK-iOS (~> 4.15.1)
     - DJI-UXSDK-iOS (~> 4.14)
     - DJIWidget (~> 1.6.5)
-    - DronelinkCore (~> 3.2.0)
-    - DronelinkCoreUI (~> 3.2.0)
-    - DronelinkDJI (~> 3.2.0)
+    - DronelinkCore (~> 3.3.0)
+    - DronelinkCoreUI (~> 3.3.0)
+    - DronelinkDJI (~> 3.3.0)
     - MaterialComponents/Palettes (~> 124.2.0)
     - SnapKit (~> 5.0.1)
     - SwiftyUserDefaults (~> 5.3.0)
@@ -41,7 +41,7 @@ PODS:
   - Kingfisher (7.1.2)
   - Mapbox-iOS-SDK (6.4.1):
     - MapboxMobileEvents (~> 0.10.12)
-  - MapboxMobileEvents (0.10.13)
+  - MapboxMobileEvents (0.10.14)
   - MarqueeLabel (4.3.0)
   - MaterialComponents/ActivityIndicator (124.2.0):
     - MaterialComponents/Palettes
@@ -194,14 +194,14 @@ PODS:
     - MotionInterchange (~> 3.0)
   - MotionInterchange (3.0.0)
   - SnapKit (5.0.1)
-  - SwiftyGif (5.4.2)
+  - SwiftyGif (5.4.3)
   - SwiftyUserDefaults (5.3.0)
 
 DEPENDENCIES:
-  - DronelinkCore (~> 3.2.0)
-  - DronelinkCoreUI (from `https://github.com/dronelink/dronelink-core-ui-ios.git`, tag `3.2.0`)
-  - DronelinkDJI (~> 3.2.0)
-  - DronelinkDJIUI (from `https://github.com/dronelink/dronelink-dji-ui-ios.git`, tag `3.2.0`)
+  - DronelinkCore (~> 3.3.0)
+  - DronelinkCoreUI (from `https://github.com/dronelink/dronelink-core-ui-ios.git`, tag `3.3.0`)
+  - DronelinkDJI (~> 3.3.0)
+  - DronelinkDJIUI (from `https://github.com/dronelink/dronelink-dji-ui-ios.git`, tag `3.3.0`)
 
 SPEC REPOS:
   trunk:
@@ -229,32 +229,32 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   DronelinkCoreUI:
     :git: https://github.com/dronelink/dronelink-core-ui-ios.git
-    :tag: 3.2.0
+    :tag: 3.3.0
   DronelinkDJIUI:
     :git: https://github.com/dronelink/dronelink-dji-ui-ios.git
-    :tag: 3.2.0
+    :tag: 3.3.0
 
 CHECKOUT OPTIONS:
   DronelinkCoreUI:
     :git: https://github.com/dronelink/dronelink-core-ui-ios.git
-    :tag: 3.2.0
+    :tag: 3.3.0
   DronelinkDJIUI:
     :git: https://github.com/dronelink/dronelink-dji-ui-ios.git
-    :tag: 3.2.0
+    :tag: 3.3.0
 
 SPEC CHECKSUMS:
   Agrume: 0b1a42b5bfbc3aa9f0801f2857d8df1138cf2951
   DJI-SDK-iOS: cb382fe5c4f5d74f8333ea21ed0413a7a84b8b4f
   DJI-UXSDK-iOS: 13bcf4ed89db6ea19fd125b1392613153f0c96b9
   DJIWidget: c592143a31f182a7e97a894168c4363ad42c6ff2
-  DronelinkCore: 3080e6b00f096a54e31ba7273fb58911a8cb3b6f
-  DronelinkCoreUI: c5340514b76f103c4f81708c6148dad8eb796756
-  DronelinkDJI: 59dd7b371762693c86a841729200e2cd1c1c14f6
-  DronelinkDJIUI: 007765a90e2d5280b715ddacca659f6a7d889991
+  DronelinkCore: fab61a229e83a3a89577fff9c18b22cdd94e8015
+  DronelinkCoreUI: 31949cc93fa75c33141b48f62d70e33ee61ecbf1
+  DronelinkDJI: 54d1a943bec9c1c05f22901317f2287206da58d2
+  DronelinkDJIUI: 7b73de439c474750431be386ffd553cb7b7a3156
   IQKeyboardManager: 241cc94ccabc9deb8f8bd7d12f00d73288d13ecc
   Kingfisher: 44ed6a8504763f27bab46163adfac83f5deb240c
   Mapbox-iOS-SDK: f870f83cbdc7aa4a74afcee143aafb0dae390c82
-  MapboxMobileEvents: e78db24b348f48e41e5895be7dc16e5b1bb43562
+  MapboxMobileEvents: 5a172cc9bbf8ac0e45ba86095cbee685ede248cc
   MarqueeLabel: 02f5ac8fd6877c94564556cb93fa86c70c08baeb
   MaterialComponents: 1a9b2d9d45b1601ae544de85089adc4c464306d4
   MDFInternationalization: d697c55307816222a55685c4ccb1044ffb030c12
@@ -263,9 +263,9 @@ SPEC CHECKSUMS:
   MotionAnimator: 5f99d7c9592928c0f28a66283eda9c3b657dc480
   MotionInterchange: 13adae439b377e31d1674cc165539d50e1d1566a
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
-  SwiftyGif: dec758a9dd3d278e5a855dbf279bf062c923c387
+  SwiftyGif: 6c3eafd0ce693cad58bb63d2b2fb9bacb8552780
   SwiftyUserDefaults: 63f80248cf5bfb3458825d9a78f2eb7e1293a040
 
-PODFILE CHECKSUM: 17366aad846e19a667b23eccd7ff1449792ceb7e
+PODFILE CHECKSUM: a602d4b6752718d7c6d6fd7f536b13ba7c028c61
 
 COCOAPODS: 1.11.2
