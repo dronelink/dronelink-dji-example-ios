@@ -3,10 +3,6 @@ inhibit_all_warnings!
 use_frameworks!
 
 target 'DronelinkDJIExample' do
-  pod 'DronelinkCore', '~> 3.3.0'
-  pod 'DronelinkDJI', '~> 3.3.0'
-  pod 'DronelinkCoreUI', :git => 'https://github.com/dronelink/dronelink-core-ui-ios.git', :tag => '3.3.0'
-  pod 'DronelinkDJIUI', :git => 'https://github.com/dronelink/dronelink-dji-ui-ios.git', :tag => '3.3.0'
   post_install do |installer|
     installer.pods_project.targets.each do |target|
       target.build_configurations.each do |config|
@@ -14,4 +10,8 @@ target 'DronelinkDJIExample' do
       end
     end
   end
+  pod 'DronelinkCore', '~> 3.3.1'
+  pod 'DronelinkDJI', '~> 3.3.1'
+  pod 'DronelinkCoreUI', :git => 'https://github.com/dronelink/dronelink-core-ui-ios.git', :tag => '3.3.1'
+  pod 'DronelinkDJIUI', :git => 'https://github.com/dronelink/dronelink-dji-ui-ios.git', :tag => '3.3.1'
 end
