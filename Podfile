@@ -10,8 +10,8 @@ target 'DronelinkDJIExample' do
       end
     end
   end
-  pod 'DronelinkCore', '~> 3.4.0'
-  pod 'DronelinkDJI', '~> 3.4.0'
-  pod 'DronelinkCoreUI', :git => 'https://github.com/dronelink/dronelink-core-ui-ios.git', :tag => '3.4.0'
-  pod 'DronelinkDJIUI', :git => 'https://github.com/dronelink/dronelink-dji-ui-ios.git', :tag => '3.4.0'
+  pod 'DronelinkCore', '~> 4.0.0'
+  pod 'DronelinkDJI', '~> 4.0.0'
+  pod 'DronelinkCoreUI', :git => 'https://github.com/dronelink/dronelink-core-ui-ios.git', :tag => '4.0.0'
+  pod 'DronelinkDJIUI', :git => 'https://github.com/dronelink/dronelink-dji-ui-ios.git', :tag => '4.0.0'
 end
