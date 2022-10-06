@@ -382,7 +382,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 4.0.0;
+				MARKETING_VERSION = 4.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dronelink.DronelinkExample;
 				PRODUCT_NAME = DronelinkDJIExample;
 				SWIFT_VERSION = 5.0;
@@ -408,7 +408,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 4.0.0;
+				MARKETING_VERSION = 4.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dronelink.DronelinkExample;
 				PRODUCT_NAME = DronelinkDJIExample;
 				SWIFT_VERSION = 5.0;
