@@ -4,10 +4,10 @@ PODS:
   - DJI-SDK-iOS (4.16.2)
   - DJI-UXSDK-iOS (4.16.2)
   - DJIWidget (1.6.8)
-  - DronelinkCore (4.6.0)
-  - DronelinkCoreUI (4.6.0):
+  - DronelinkCore (4.7.0)
+  - DronelinkCoreUI (4.7.0):
     - Agrume (~> 5.8.0)
-    - DronelinkCore (~> 4.6.0)
+    - DronelinkCore (~> 4.7.0)
     - IQKeyboardManager (= 6.5.6)
     - Kingfisher (~> 7.6.2)
     - MapboxMaps (~> 10.11.1)
@@ -24,17 +24,17 @@ PODS:
     - MicrosoftMapsSDK (~> 1.2.0)
     - SnapKit (~> 5.0.1)
     - SwiftyUserDefaults (~> 5.3.0)
-  - DronelinkDJI (4.6.0):
+  - DronelinkDJI (4.7.0):
     - DJI-SDK-iOS (~> 4.16.2)
     - DJIWidget (~> 1.6.8)
-    - DronelinkCore (~> 4.6.0)
-  - DronelinkDJIUI (4.6.0):
+    - DronelinkCore (~> 4.7.0)
+  - DronelinkDJIUI (4.7.0):
     - DJI-SDK-iOS (~> 4.16.2)
     - DJI-UXSDK-iOS (~> 4.14)
     - DJIWidget (~> 1.6.8)
-    - DronelinkCore (~> 4.6.0)
-    - DronelinkCoreUI (~> 4.6.0)
-    - DronelinkDJI (~> 4.6.0)
+    - DronelinkCore (~> 4.7.0)
+    - DronelinkCoreUI (~> 4.7.0)
+    - DronelinkDJI (~> 4.7.0)
     - MaterialComponents/Palettes (~> 124.2.0)
     - SnapKit (~> 5.0.1)
     - SwiftyUserDefaults (~> 5.3.0)
@@ -49,7 +49,7 @@ PODS:
     - MapboxMobileEvents (= 1.0.10)
     - Turf (~> 2.0)
   - MapboxMobileEvents (1.0.10)
-  - MarqueeLabel (4.3.0)
+  - MarqueeLabel (4.3.1)
   - MaterialComponents/ActivityIndicator (124.2.0):
     - MaterialComponents/Palettes
     - MaterialComponents/private/Application
@@ -206,10 +206,10 @@ PODS:
   - Turf (2.6.1)
 
 DEPENDENCIES:
-  - DronelinkCore (~> 4.6.0)
-  - DronelinkCoreUI (from `https://github.com/dronelink/dronelink-core-ui-ios.git`, tag `4.6.0`)
-  - DronelinkDJI (~> 4.6.0)
-  - DronelinkDJIUI (from `https://github.com/dronelink/dronelink-dji-ui-ios.git`, tag `4.6.0`)
+  - DronelinkCore (~> 4.7.0)
+  - DronelinkCoreUI (from `https://github.com/dronelink/dronelink-core-ui-ios.git`, tag `4.7.0`)
+  - DronelinkDJI (~> 4.7.0)
+  - DronelinkDJIUI (from `https://github.com/dronelink/dronelink-dji-ui-ios.git`, tag `4.7.0`)
 
 SPEC REPOS:
   trunk:
@@ -240,35 +240,35 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   DronelinkCoreUI:
     :git: https://github.com/dronelink/dronelink-core-ui-ios.git
-    :tag: 4.6.0
+    :tag: 4.7.0
   DronelinkDJIUI:
     :git: https://github.com/dronelink/dronelink-dji-ui-ios.git
-    :tag: 4.6.0
+    :tag: 4.7.0
 
 CHECKOUT OPTIONS:
   DronelinkCoreUI:
     :git: https://github.com/dronelink/dronelink-core-ui-ios.git
-    :tag: 4.6.0
+    :tag: 4.7.0
   DronelinkDJIUI:
     :git: https://github.com/dronelink/dronelink-dji-ui-ios.git
-    :tag: 4.6.0
+    :tag: 4.7.0
 
 SPEC CHECKSUMS:
   Agrume: 7c726bddf365f92424d38ce90a906cd4cdd49334
   DJI-SDK-iOS: 44308a021c3b95a912be52c4e7a8e0a27e5434f5
   DJI-UXSDK-iOS: 8a9db4bda9fcc38ccf9861fb7d7ba30d44c7791c
   DJIWidget: 9d92abb52888cd6296717c93feacd8a703bf678a
-  DronelinkCore: 1a6aeb09b097490790fb96beaa5f00a2442e4ba0
-  DronelinkCoreUI: a1921cbebba1708c31500798bdcbe728506cd3e3
-  DronelinkDJI: d13a56e50fda4a1ea36315664a693901303a831c
-  DronelinkDJIUI: 212902a2234a8fa14800a7bcf1be223714644008
+  DronelinkCore: aaf16a548b0f8b5a3456d87b2e63dcee2c1702ad
+  DronelinkCoreUI: d9b58ea4e4ecc68d3c5fb5cf49cd861435088c66
+  DronelinkDJI: 28fcdadba9a6b6aec4474a091b760236afdda483
+  DronelinkDJIUI: e38e229d9e1413d6247fbe2705456daac8a29ced
   IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
   Kingfisher: 6c5449c6450c5239166510ba04afe374a98afc4f
   MapboxCommon: c3a35f6884b80d898de9f11d88cb28c5caba584a
   MapboxCoreMaps: 03e7214fabb54d496ff56314ff8159dd264b6093
   MapboxMaps: 85610575a8871b3f5e98be2a234f0229a33324a7
   MapboxMobileEvents: de50b3a4de180dd129c326e09cd12c8adaaa46d6
-  MarqueeLabel: 02f5ac8fd6877c94564556cb93fa86c70c08baeb
+  MarqueeLabel: da4b9cf619fe70c75d7bab4580b0b4a0b868aa6b
   MaterialComponents: 1a9b2d9d45b1601ae544de85089adc4c464306d4
   MDFInternationalization: d697c55307816222a55685c4ccb1044ffb030c12
   MDFTextAccessibility: f4bb4cc2194286651b59a215fdeaa0e05dc90ba5
@@ -280,6 +280,6 @@ SPEC CHECKSUMS:
   SwiftyUserDefaults: 63f80248cf5bfb3458825d9a78f2eb7e1293a040
   Turf: 469ce2c3d22e5e8e4818d5a3b254699a5c89efa4
 
-PODFILE CHECKSUM: cf1c5298a88ca75aaad487126395f71d5ae85ade
+PODFILE CHECKSUM: 59126e09a71b829f9d8db84207409f14bd31373f
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.12.1
